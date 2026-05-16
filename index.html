@@ -185,6 +185,18 @@
     .how-step h4{font-family:var(--display);font-size:15px;font-weight:600;text-transform:uppercase;color:var(--white);margin-bottom:8px;line-height:1.1}
     .how-step p{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
 
+    /* WORKS WITH */
+    .ww-section{padding:88px 40px}
+    .ww-row{margin-top:52px;display:flex;flex-direction:column;gap:28px}
+    .ww-cat-label{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+    .ww-cat-label::after{content:'';flex:1;height:1px;background:var(--border)}
+    .ww-logos-row{display:flex;flex-wrap:wrap;gap:10px}
+    .ww-card{display:flex;align-items:center;gap:10px;padding:11px 18px;background:var(--bg3);border:1px solid var(--border);border-radius:10px;transition:border-color .2s,background .2s;cursor:default}
+    .ww-card:hover{border-color:var(--border-md);background:rgba(255,255,255,.04)}
+    .ww-card-mark{width:24px;height:24px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:9px;font-weight:700;letter-spacing:.02em}
+    .ww-card-name{font-size:13px;color:var(--white);font-weight:400;white-space:nowrap}
+    .ww-card-sub{font-size:10px;color:var(--muted);margin-top:1px}
+
     /* CTA */
     .cta-wrap{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:100px 40px;text-align:center;position:relative;overflow:hidden}
     .cta-wrap::before{content:'';position:absolute;bottom:-150px;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(14,165,233,.06) 0%,transparent 70%);pointer-events:none}
@@ -555,6 +567,112 @@
       <div class="how-step reveal d2"><span class="how-n">03</span><h4>Internal approvals</h4><p>Your team signs off internally first. Managers approve before any document reaches a supplier or customer.</p></div>
       <div class="how-step reveal d3"><span class="how-n">04</span><h4>Portal link shared</h4><p>Supplier or customer receives one link. They review, comment, and sign everything for the order — no login required.</p></div>
       <div class="how-step reveal d4"><span class="how-n">05</span><h4>Order complete</h4><p>All parties get signed copies automatically. Full audit trail stored. Your team moves to the next order.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS WITH -->
+<section class="ww-section">
+  <div class="container">
+    <span class="section-label reveal">Integrations</span>
+    <h2 class="reveal">Works with your <em>existing stack</em></h2>
+    <p class="section-sub reveal">DocTrack connects to the ERP systems, freight platforms, and compliance databases your team already runs — no rip-and-replace required.</p>
+
+    <div class="ww-row">
+
+      <!-- ERP & Trade -->
+      <div class="reveal">
+        <div class="ww-cat-label">ERP &amp; Trade systems</div>
+        <div class="ww-logos-row">
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#0070F2;color:#fff">SAP</div>
+            <div><div class="ww-card-name">SAP ERP</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#0070F2;color:#fff;font-size:7px">GTS</div>
+            <div><div class="ww-card-name">SAP GTS</div><div class="ww-card-sub">Global Trade Services</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#C74634;color:#fff;font-size:8px">ORA</div>
+            <div><div class="ww-card-name">Oracle</div><div class="ww-card-sub">ERP Cloud</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#00B14F;color:#fff">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div><div class="ww-card-name">Excel / Sheets</div><div class="ww-card-sub">Import &amp; export</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#FF6900;color:#fff">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+            </div>
+            <div><div class="ww-card-name">Webhook / API</div><div class="ww-card-sub">Any system</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemical Freight Forwarders -->
+      <div class="reveal">
+        <div class="ww-cat-label">Chemical freight forwarders</div>
+        <div class="ww-logos-row">
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#1B3A6B;color:#fff;font-size:8px">BER</div>
+            <div><div class="ww-card-name">Bertschi</div><div class="ww-card-sub">Bulk liquid &amp; chemical</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#E30613;color:#fff;font-size:7px">HOY</div>
+            <div><div class="ww-card-name">Hoyer Group</div><div class="ww-card-sub">Tank logistics</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#003087;color:#fff;font-size:7px">STC</div>
+            <div><div class="ww-card-name">Stolt-Nielsen</div><div class="ww-card-sub">Tank containers</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#FF4713;color:#fff;font-size:7px">FRT</div>
+            <div><div class="ww-card-name">Forto</div><div class="ww-card-sub">Digital forwarding</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#5C2D91;color:#fff;font-size:7px">ZEN</div>
+            <div><div class="ww-card-name">Zencargo</div><div class="ww-card-sub">Freight visibility</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#0E3254;color:#fff;font-size:7px">VOS</div>
+            <div><div class="ww-card-name">Vos Logistics</div><div class="ww-card-sub">Chemical tankers</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance & Registry -->
+      <div class="reveal">
+        <div class="ww-cat-label">Compliance &amp; registries</div>
+        <div class="ww-logos-row">
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#E07B00;color:#fff;font-size:8px">KVK</div>
+            <div><div class="ww-card-name">KVK</div><div class="ww-card-sub">Netherlands Chamber of Commerce</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#154273;color:#fff;font-size:7px">NVW</div>
+            <div><div class="ww-card-name">NVWA</div><div class="ww-card-sub">Food &amp; Product Safety</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#01689B;color:#fff;font-size:7px">DOU</div>
+            <div><div class="ww-card-name">Dutch Customs</div><div class="ww-card-sub">Douane</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#0061FF;color:#fff">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <div><div class="ww-card-name">Dropbox Sign</div><div class="ww-card-sub">E-signatures</div></div>
+          </div>
+          <div class="ww-card">
+            <div class="ww-card-mark" style="background:#3ECF8E;color:#1a1a1a">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div><div class="ww-card-name">Supabase</div><div class="ww-card-sub">Data &amp; storage</div></div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
